@@ -934,21 +934,21 @@ li {
 #billboard {
     background-color: #F7F9FD;
     overflow: hidden;
+    width: 100%;
 }
 
 #billboard .main-banner {
-    display: flex;
     flex-wrap: wrap;
-    width: 1430px;
+    width: 100%;
+    max-width: 1430px;
     margin: 0 auto;
-    padding: 110px;
+    padding: 70px;
+    box-sizing: border-box;
+
 }
 
 #billboard .banner-content {
-    width: 52%;
     padding-top: 55px;
-    margin-right: 65px;
-    margin-left: 20px;
 
 }
 
@@ -961,74 +961,26 @@ li {
 
 .banner-content p {
     margin-bottom: 90px;
-
 }
 
 #billboard figure {
-    width: 41%;
+    width: 100%;
+    height: 50%;
     z-index: 2;
+    padding: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
 }
 
-@media only screen and (max-width: 1370px) {
-    #billboard .main-banner {
-        display: flex;
-        flex-wrap: wrap;
-        width: 1290px;
-        margin: 0 auto;
-    }
+#billboard figure img {
+    width: 90%;
+    /* Adjust this value to change the width */
+    height: 50%;
+    /* Adjust this value to change the height, or set a fixed height */
+    max-width: 100%;
+    display: block;
 }
-
-@media only screen and (max-width: 1200px) {
-    #billboard .main-banner {
-        width: 1160px;
-        padding: 70px;
-    }
-
-    #billboard .banner-content {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    #billboard .main-banner {
-        width: 1060px;
-        padding: 70px;
-    }
-
-    #billboard .banner-content {
-        width: 80%;
-        order: 2;
-    }
-
-    #billboard figure {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 820px) {
-    #billboard .main-banner {
-        width: 800px;
-        padding: 70px;
-    }
-}
-
-@media only screen and (max-width: 630px) {
-    #billboard .main-banner {
-        width: 610px;
-        padding: 30px 30px 100px;
-    }
-
-    .banner-content h3.banner-title {
-        font-size: 2.4em;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #billboard .main-banner {
-        width: 480px;
-    }
-}
-
 
 
 /*----- About Section
