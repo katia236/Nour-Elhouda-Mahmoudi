@@ -1715,19 +1715,18 @@ li {
 
 /*----- Association Section --------------------------------------------------------------*/
 #footer {
-    background-color: #F7F9FD;
+    background-color: #692c4a;
+    padding: 130px 0;
     margin-left: 0;
     margin-right: 0;
-    text-align: center;
-    /* Center the text */
-    padding: 20px 0;
-    /* Add padding for better spacing */
+    padding-left: 10px;
+    /* ajustez selon vos besoins */
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 #footer .container {
     max-width: 1200px;
-    margin: 0 auto;
-    /* Center the container */
 }
 
 #footer ul.menu-list li {
@@ -1737,8 +1736,6 @@ li {
 
 #footer .footer-menu {
     width: 16%;
-    margin: 0 auto;
-    /* Center the footer menu */
 }
 
 #footer strong {
@@ -1749,8 +1746,7 @@ li {
 
 #footer .footer-item {
     width: 40%;
-    margin: 0 auto;
-    /* Center the footer item */
+    margin-left: 300px;
     /* For LTR (default) */
 }
 
@@ -1761,35 +1757,21 @@ li {
 #footer-bottom {
     border-top: 1px solid #E7EBF1;
     background: #f7f9fd;
-    padding: 20px 0;
-    /* Add padding for better spacing */
-    text-align: center;
-    /* Center the text */
+    padding-top: 60px;
 }
 
 #footer-bottom ul {
     display: flex;
-    justify-content: center;
-    /* Center the list items */
 }
 
 #footer-bottom li {
     padding-left: 10px;
-    list-style: none;
-    /* Remove bullet points */
 }
 
-#footer-bottom p {
-    margin: 0;
-    /* Remove default margin */
-    text-align: center;
-    /* Center the paragraph */
-}
-
-/* Media Queries */
 @media only screen and (max-width: 1140px) {
     #footer .footer-item {
-        width: 80%;
+        margin-left: 100px;
+        /* For LTR (default) */
     }
 }
 
@@ -1801,6 +1783,8 @@ li {
 
     #footer .footer-item {
         width: 80%;
+        margin-left: 10px;
+        /* For LTR (default) */
     }
 
     #footer .footer-item h2 {
@@ -1820,36 +1804,41 @@ li {
 
 [dir="rtl"] #footer .footer-item {
     margin-left: 0;
-    margin-right: auto;
-    /* Center align for RTL */
+    /* Remove left margin for RTL */
+    margin-right: 300px;
+    /* Add right margin for RTL (Arabic) */
 }
 
 [dir="rtl"] #footer .footer-menu {
     text-align: right;
+    /* Align text to the right for RTL */
 }
 
 [dir="rtl"] #footer-bottom ul {
     flex-direction: row-reverse;
+    /* Reverse direction for RTL */
 }
 
 [dir="rtl"] #footer-bottom li {
     padding-left: 0;
+    /* Remove left padding for RTL */
     padding-right: 10px;
+    /* Add right padding for RTL */
 }
 
-/* Adjust margins for RTL in media queries */
 @media only screen and (max-width: 1140px) {
     [dir="rtl"] #footer .footer-item {
-        width: 80%;
+        margin-right: 100px;
+        /* Adjust right margin for RTL */
     }
 }
 
 @media only screen and (max-width: 800px) {
     [dir="rtl"] #footer .footer-item {
-        width: 80%;
+        margin-right: 10px;
+        /* Adjust right margin for RTL */
     }
 }
-
 
 /* Specific styles for French, Spanish, Portuguese, and English */
 html:lang(fr) #footer .footer-item,
