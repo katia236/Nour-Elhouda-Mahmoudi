@@ -1741,8 +1741,10 @@ li {
 
 #footer .footer-item {
     width: 40%;
-    margin-left: 300px;
-    /* For LTR (default) */
+    margin-left: auto;
+    /* Center align for default */
+    margin-right: auto;
+    /* Center align for default */
 }
 
 #footer .footer-item h2 {
@@ -1763,10 +1765,12 @@ li {
     padding-left: 10px;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 1140px) {
     #footer .footer-item {
-        margin-left: 100px;
-        /* For LTR (default) */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -1778,8 +1782,8 @@ li {
 
     #footer .footer-item {
         width: 80%;
-        margin-left: 10px;
-        /* For LTR (default) */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #footer .footer-item h2 {
@@ -1799,41 +1803,42 @@ li {
 
 [dir="rtl"] #footer .footer-item {
     margin-left: 0;
-    /* Remove left margin for RTL */
-    margin-right: 300px;
-    /* Add right margin for RTL (Arabic) */
+    margin-right: auto;
+    /* Center align for RTL */
+    margin-right: auto;
+    /* Center align for RTL */
 }
 
 [dir="rtl"] #footer .footer-menu {
     text-align: right;
-    /* Align text to the right for RTL */
 }
 
 [dir="rtl"] #footer-bottom ul {
     flex-direction: row-reverse;
-    /* Reverse direction for RTL */
 }
 
 [dir="rtl"] #footer-bottom li {
     padding-left: 0;
-    /* Remove left padding for RTL */
     padding-right: 10px;
-    /* Add right padding for RTL */
 }
 
+/* Adjust margins for RTL in media queries */
 @media only screen and (max-width: 1140px) {
     [dir="rtl"] #footer .footer-item {
-        margin-right: 100px;
-        /* Adjust right margin for RTL */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media only screen and (max-width: 800px) {
     [dir="rtl"] #footer .footer-item {
-        margin-right: 10px;
-        /* Adjust right margin for RTL */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
 
 /* Specific styles for French, Spanish, Portuguese, and English */
 html:lang(fr) #footer .footer-item,
