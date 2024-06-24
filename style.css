@@ -1717,6 +1717,8 @@ li {
 #footer {
     background-color: #F7F9FD;
     padding: 130px 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #footer .container {
