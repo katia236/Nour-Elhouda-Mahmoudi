@@ -474,7 +474,7 @@ i.icon.icon-ns-arrow-right {
 -----------------------------------------------*/
 img.single-image {
     width: 100%;
-    height: 700px;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -1038,7 +1038,7 @@ li {
     }
 
     #about img.single-image {
-        height: 500px;
+        height: 70%;
     }
 
     #about .detail-entry {
@@ -1080,7 +1080,7 @@ li {
     }
 
     #history img.single-image {
-        height: 500px;
+        height: 70%;
     }
 
     #history .detail-entry {
