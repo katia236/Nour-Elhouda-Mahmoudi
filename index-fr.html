@@ -41,8 +41,7 @@
 							<div class="main-menu">
 								<ul class="menu-list">
 									<li class="menu-item active"><a href="#home" data-effect="Home">Motivation</a></li>
-									<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">A
-											propos</a></li>
+
 									<li class="menu-item"><a href="#services" class="nav-link"
 											data-effect="Services">Mes priorités</a></li>
 									<li class="menu-item"><a href="#scouting-journey" class="nav-link"
@@ -185,7 +184,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section id="services">
 		<div class="container">
 			<div class="row">
@@ -194,7 +192,8 @@
 						<div class="grid">
 							<div class="detail-entry">
 								<div class="section-header">
-									<h2 id="dynamic-subtitle" class="section-subtitle liner">Nour Elhouda Mahmoudi</h2>
+									<h2 id="dynamic-subtitle" class="section-subtitle liner" onclick="resetContent()">
+										Nour Elhouda Mahmoudi</h2>
 									<h3 id="dynamic-title" class="section-title">Mes priorités</h3>
 								</div>
 								<div id="dynamic-content" class="detail-wrap">
@@ -202,10 +201,8 @@
 										des personnes de tous âges et de tous horizons. Il a le pouvoir d'inspirer, de
 										transformer et d'unir, créant un mélange harmonieux de valeurs et d'expériences
 										qui façonnent la vie des jeunes à travers le monde.
-
 										Dans cet esprit, mon engagement à siéger au Comité mondial du Scoutisme est
 										motivé par une détermination inébranlable à atteindre les priorités suivantes :
-
 									</p>
 								</div>
 							</div>
@@ -213,28 +210,28 @@
 							<div class="service-grid grid" data-aos="fade-up">
 								<div class="column odd-column">
 									<div class="icon-box" onclick="showContent('content1')">
-										<img src="images/camera.png" alt="Photography">
+										<img src="images/apprentissage.png" alt="Photography">
 										<div class="title">Éducation Innovante</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content2')">
-										<img src="images/animation.png" alt="Animation">
+										<img src="images/team-leader.png" alt="Animation">
 										<div class="title">Leadership des Jeunes</div>
 									</div>
 								</div>
 								<div class="column">
 									<div class="icon-box" onclick="showContent('content3')">
-										<img src="images/branding.png" alt="Branding">
+										<img src="images/diversity.png" alt="Branding">
 										<div class="title">Diversité et Inclusion</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content4')">
-										<img src="images/data-research.png" alt="Business Plan">
-										<div class="title">Partenariats et Plaidoyer </div>
+										<img src="images/partnership.png" alt="Business Plan">
+										<div class="title">Partenariats et Plaidoyer</div>
 									</div>
 								</div>
 							</div>
-						</div><!--grid-->
+						</div><!-- grid -->
 					</div>
-				</div><!--inner-content-->
+				</div><!-- inner-content -->
 			</div>
 		</div>
 	</section>
@@ -242,7 +239,7 @@
 		function showContent(contentId) {
 			const content = {
 				content1: {
-					title: "Education Innovante",
+					title: "Éducation Innovante",
 					subtitle: "Nour Elhouda Mahmoudi",
 					text: `<p>tout comme chaque note dans une symphonie contribue à un tout harmonieux, l'Éducation Innovante dans le Scoutisme garantit que le potentiel de chaque Scout soit pleinement réalisé. En améliorant constamment nos programmes éducatifs, nous nous assurons que notre Mouvement reste dynamique, pertinent et tourné vers l'avenir.</p>`
 				},
@@ -257,7 +254,7 @@
 					text: `<p>tout comme une symphonie est enrichie par une variété d'instruments, la force du Scoutisme réside dans sa diversité culturelle et sa richesse. En embrassant et en célébrant cette diversité, nous nous assurons que chaque Scout se sente valorisé et inclus. En favorisant un Mouvement mondial uni dans son engagement envers les valeurs du Scoutisme.</p>`
 				},
 				content4: {
-					title: "Partenariat et plaidoyer",
+					title: "Partenariats et Plaidoyer",
 					subtitle: "Nour Elhouda Mahmoudi",
 					text: `<p>tout comme la résonance puissante d'un accord bien joué, l'impact du Scoutisme est amplifié par des partenariats stratégiques et des efforts de plaidoyer. En établissant des alliances solides et en défendant la mission du Scoutisme sur la scène mondiale, nous pouvons renforcer notre influence, promouvoir le changement positif et étendre la portée et l'impact du Scoutisme à travers le monde.</p>`
 				}
@@ -267,7 +264,16 @@
 			document.getElementById('dynamic-subtitle').innerText = content[contentId].subtitle;
 			document.getElementById('dynamic-content').innerHTML = content[contentId].text;
 		}
+
+		function resetContent() {
+			document.getElementById('dynamic-title').innerText = "Mes priorités";
+			document.getElementById('dynamic-subtitle').innerText = "Nour Elhouda Mahmoudi";
+			document.getElementById('dynamic-content').innerHTML = `<p>Le Scoutisme, tout comme la musique, est un langage universel qui résonne avec des personnes de tous âges et de tous horizons. Il a le pouvoir d'inspirer, de transformer et d'unir, créant un mélange harmonieux de valeurs et d'expériences qui façonnent la vie des jeunes à travers le monde.
+										Dans cet esprit, mon engagement à siéger au Comité mondial du Scoutisme est
+										motivé par une détermination inébranlable à atteindre les priorités suivantes :</p>`;
+		}
 	</script>
+
 	<!-- Existing content -->
 
 	<!-- New Dynamic Quote Section -->
@@ -498,9 +504,7 @@
 									<li class="menu-item">
 										<a href="#">Motivation</a>
 									</li>
-									<li class="menu-item">
-										<a href="#">A propos</a>
-									</li>
+
 									<li class="menu-item">
 										<a href="#">Mes priorités</a>
 									</li>

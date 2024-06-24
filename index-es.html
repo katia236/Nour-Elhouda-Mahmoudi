@@ -42,8 +42,7 @@
 								<ul class="menu-list">
 									<li class="menu-item active"><a href="#billboard" data-effect="Home">Motivación</a>
 									</li>
-									<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">Acerca
-											de mí</a></li>
+
 									<li class="menu-item"><a href="#services" class="nav-link"
 											data-effect="Services">Mis prioridades</a></li>
 									<li class="menu-item"><a href="#scouting-journey" class="nav-link"
@@ -180,7 +179,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section id="services">
 		<div class="container">
 			<div class="row">
@@ -189,13 +187,14 @@
 						<div class="grid">
 							<div class="detail-entry">
 								<div class="section-header">
-									<h2 id="dynamic-subtitle" class="section-subtitle liner">Nour Elhouda Mahmoudi</h2>
+									<h2 id="dynamic-subtitle" class="section-subtitle liner" onclick="resetContent()">
+										Nour Elhouda Mahmoudi</h2>
 									<h3 id="dynamic-title" class="section-title">Mis prioridades</h3>
 								</div>
 								<div id="dynamic-content" class="detail-wrap">
 									<p>El escultismo, al igual que la música, es un lenguaje universal que resuena con
-										personas de
-										todas las edades y antecedentes. Tiene el poder de inspirar, transformar y unir,
+										personas de todas las edades y antecedentes. Tiene el poder de inspirar,
+										transformar y unir,
 										creando una mezcla armoniosa de valores y experiencias que moldean las vidas de
 										los jóvenes en todo el mundo. En este espíritu, mi compromiso de servir en el
 										Comité Mundial del Escultismo está impulsado por una dedicación inquebrantable a
@@ -206,21 +205,21 @@
 							<div class="service-grid grid" data-aos="fade-up">
 								<div class="column odd-column">
 									<div class="icon-box" onclick="showContent('content1')">
-										<img src="images/camera.png" alt="Photography">
+										<img src="images/apprentissage.png" alt="Photography">
 										<div class="title">Educación Innovadora</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content2')">
-										<img src="images/animation.png" alt="Animation">
+										<img src="images/team-leader.png" alt="Animation">
 										<div class="title">Liderazgo Juvenil</div>
 									</div>
 								</div>
 								<div class="column">
 									<div class="icon-box" onclick="showContent('content3')">
-										<img src="images/branding.png" alt="Branding">
+										<img src="images/diversity.png" alt="Branding">
 										<div class="title">Diversidad e Inclusión</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content4')">
-										<img src="images/data-research.png" alt="Business Plan">
+										<img src="images/partnership.png" alt="Business Plan">
 										<div class="title">Asociaciones y Defensa</div>
 									</div>
 								</div>
@@ -260,7 +259,19 @@
 			document.getElementById('dynamic-subtitle').innerText = content[contentId].subtitle;
 			document.getElementById('dynamic-content').innerHTML = content[contentId].text;
 		}
+
+		function resetContent() {
+			document.getElementById('dynamic-title').innerText = "Mis prioridades";
+			document.getElementById('dynamic-subtitle').innerText = "Nour Elhouda Mahmoudi";
+			document.getElementById('dynamic-content').innerHTML = `<p>El escultismo, al igual que la música, es un lenguaje universal que resuena con
+										personas de todas las edades y antecedentes. Tiene el poder de inspirar, transformar y unir,
+										creando una mezcla armoniosa de valores y experiencias que moldean las vidas de
+										los jóvenes en todo el mundo. En este espíritu, mi compromiso de servir en el
+										Comité Mundial del Escultismo está impulsado por una dedicación inquebrantable a
+										las siguientes prioridades clave:</p>`;
+		}
 	</script>
+
 	<!-- Existing content -->
 
 	<!-- New Dynamic Quote Section -->
@@ -483,9 +494,7 @@
 									<li class="menu-item">
 										<a href="#billboard">Motivación</a>
 									</li>
-									<li class="menu-item">
-										<a href="#about">Acerca de mí</a>
-									</li>
+
 									<li class="menu-item">
 										<a href="#services">Mis prioridades</a>
 									</li>

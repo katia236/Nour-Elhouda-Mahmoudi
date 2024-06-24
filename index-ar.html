@@ -41,8 +41,7 @@
 									<li class="menu-item active"><a href="#billboard" data-effect="Home">الدافع
 											للترشح</a>
 									</li>
-									<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">حول
-											نور</a></li>
+
 									<li class="menu-item"><a href="#services" class="nav-link"
 											data-effect="Services">أولوياتي</a></li>
 									<li class="menu-item"><a href="#scouting-journey" class="nav-link"
@@ -171,7 +170,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section id="services">
 		<div class="container">
 			<div class="row">
@@ -180,7 +178,8 @@
 						<div class="grid">
 							<div class="detail-entry">
 								<div class="section-header">
-									<h2 id="dynamic-subtitle" class="section-subtitle liner">نور الهدى محمودي</h2>
+									<h2 id="dynamic-subtitle" class="section-subtitle liner" onclick="resetContent()">
+										نور الهدى محمودي</h2>
 									<h3 id="dynamic-title" class="section-title">أولوياتي</h3>
 								</div>
 								<div id="dynamic-content" class="detail-wrap">
@@ -197,21 +196,21 @@
 							<div class="service-grid grid" data-aos="fade-up">
 								<div class="column odd-column">
 									<div class="icon-box" onclick="showContent('content1')">
-										<img src="images/camera.png" alt="Photography">
+										<img src="images/apprentissage.png" alt="Photography">
 										<div class="title">التعليم المبتكر</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content2')">
-										<img src="images/animation.png" alt="Animation">
+										<img src="images/team-leader.png" alt="Animation">
 										<div class="title">القيادة الشبابية</div>
 									</div>
 								</div>
 								<div class="column">
 									<div class="icon-box" onclick="showContent('content3')">
-										<img src="images/branding.png" alt="Branding">
+										<img src="images/diversity.png" alt="Branding">
 										<div class="title">التنوع والشمول</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content4')">
-										<img src="images/data-research.png" alt="Business Plan">
+										<img src="images/partnership.png" alt="Business Plan">
 										<div class="title">الشراكات والمناصرة</div>
 									</div>
 								</div>
@@ -252,7 +251,20 @@
 			document.getElementById('dynamic-subtitle').innerText = content[contentId].subtitle;
 			document.getElementById('dynamic-content').innerHTML = content[contentId].text;
 		}
+
+		function resetContent() {
+			document.getElementById('dynamic-title').innerText = "أولوياتي";
+			document.getElementById('dynamic-subtitle').innerText = "نور الهدى محمودي";
+			document.getElementById('dynamic-content').innerHTML = `<p>
+										الكشافة، مثل الموسيقى، هي لغة عالمية يتردد صداها للجميع مع اختلاف الأعمار
+										والخلفيات. فهي تتمتع بالقدرة على الإلهام والتحويل والتوحيد، وخلق مزيج متناغم
+										من القيم والخبرات التي تشكل حياة الشباب في جميع أنحاء العالم. وعليه،
+										فالتزامي بالخدمة في اللجنة الكشفية العالمية مدفوع بالتفاني الثابت للأولويات
+										الرئيسية التالية:
+									</p>`;
+		}
 	</script>
+
 
 	<!-- New Dynamic Quote Section -->
 	<section id="quote">
@@ -442,9 +454,7 @@
 									<li class="menu-item">
 										<a href="#billboard">الدافع للترشح</a>
 									</li>
-									<li class="menu-item">
-										<a href="#about">حول نور</a>
-									</li>
+
 									<li class="menu-item">
 										<a href="#services">أولوياتي</a>
 									</li>

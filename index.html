@@ -42,8 +42,7 @@
 								<ul class="menu-list">
 									<li class="menu-item active"><a href="#billboard" data-effect="Home">Motivation</a>
 									</li>
-									<li class="menu-item"><a href="#about" class="nav-link"
-											data-effect="About">About</a></li>
+
 									<li class="menu-item"><a href="#services" class="nav-link" data-effect="Services">My
 											Priorities</a></li>
 									<li class="menu-item"><a href="#scouting-journey" class="nav-link"
@@ -203,7 +202,8 @@
 						<div class="grid">
 							<div class="detail-entry">
 								<div class="section-header">
-									<h2 id="dynamic-subtitle" class="section-subtitle liner">Nour Elhouda Mahmoudi</h2>
+									<h2 id="dynamic-subtitle" class="section-subtitle liner" onclick="resetContent()">
+										Nour Elhouda Mahmoudi</h2>
 									<h3 id="dynamic-title" class="section-title">My priorities</h3>
 								</div>
 								<div id="dynamic-content" class="detail-wrap">
@@ -219,28 +219,28 @@
 							<div class="service-grid grid" data-aos="fade-up">
 								<div class="column odd-column">
 									<div class="icon-box" onclick="showContent('content1')">
-										<img src="images/camera.png" alt="Photography">
+										<img src="images/apprentissage.png" alt="Photography">
 										<div class="title">Innovative Education</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content2')">
-										<img src="images/animation.png" alt="Animation">
+										<img src="images/team-leader.png" alt="Animation">
 										<div class="title">Youth Leadership</div>
 									</div>
 								</div>
 								<div class="column">
 									<div class="icon-box" onclick="showContent('content3')">
-										<img src="images/branding.png" alt="Branding">
+										<img src="images/diversity.png" alt="Branding">
 										<div class="title">Diversity and Inclusion</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content4')">
-										<img src="images/data-research.png" alt="Business Plan">
+										<img src="images/partnership.png" alt="Business Plan">
 										<div class="title">Partnerships and Advocacy</div>
 									</div>
 								</div>
 							</div>
-						</div><!--grid-->
+						</div><!-- grid -->
 					</div>
-				</div><!--inner-content-->
+				</div><!-- inner-content -->
 			</div>
 		</div>
 	</section>
@@ -273,7 +273,14 @@
 			document.getElementById('dynamic-subtitle').innerText = content[contentId].subtitle;
 			document.getElementById('dynamic-content').innerHTML = content[contentId].text;
 		}
+
+		function resetContent() {
+			document.getElementById('dynamic-title').innerText = "My priorities";
+			document.getElementById('dynamic-subtitle').innerText = "Nour Elhouda Mahmoudi";
+			document.getElementById('dynamic-content').innerHTML = `<p>Scouting, much like music, is a universal language that resonates with people of all ages and backgrounds. It has the power to inspire, transform, and unite, creating a harmonious blend of values and experiences that shape the lives of young people around the world. In this spirit, my commitment to serving on the World Scout Committee is driven by a steadfast dedication to the following key priorities:</p>`;
+		}
 	</script>
+
 	<!-- Existing content -->
 
 	<!-- New Dynamic Quote Section -->
@@ -499,9 +506,7 @@
 									<li class="menu-item">
 										<a href="#billboard">Motivation</a>
 									</li>
-									<li class="menu-item">
-										<a href="#about">About Me</a>
-									</li>
+
 									<li class="menu-item">
 										<a href="#services">My priorities</a>
 									</li>

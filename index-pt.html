@@ -41,8 +41,7 @@
 								<ul class="menu-list">
 									<li class="menu-item active"><a href="#billboard" data-effect="Home">Motivação</a>
 									</li>
-									<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">Sobre
-											Mim</a></li>
+
 									<li class="menu-item"><a href="#services" class="nav-link"
 											data-effect="Services">Minhas prioridades</a></li>
 									<li class="menu-item"><a href="#scouting-journey" class="nav-link"
@@ -188,7 +187,8 @@
 						<div class="grid">
 							<div class="detail-entry">
 								<div class="section-header">
-									<h2 id="dynamic-subtitle" class="section-subtitle liner">Nour Elhouda Mahmoudi</h2>
+									<h2 id="dynamic-subtitle" class="section-subtitle liner" onclick="resetContent()">
+										Nour Elhouda Mahmoudi</h2>
 									<h3 id="dynamic-title" class="section-title">Minhas prioridades</h3>
 								</div>
 								<div id="dynamic-content" class="detail-wrap">
@@ -206,21 +206,21 @@
 							<div class="service-grid grid" data-aos="fade-up">
 								<div class="column odd-column">
 									<div class="icon-box" onclick="showContent('content1')">
-										<img src="images/camera.png" alt="Photography">
+										<img src="images/apprentissage.png" alt="Photography">
 										<div class="title">Educação Inovadora</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content2')">
-										<img src="images/animation.png" alt="Animation">
+										<img src="images/team-leader.png" alt="Animation">
 										<div class="title">Liderança Juvenil</div>
 									</div>
 								</div>
 								<div class="column">
 									<div class="icon-box" onclick="showContent('content3')">
-										<img src="images/branding.png" alt="Branding">
+										<img src="images/diversity.png" alt="Branding">
 										<div class="title">Diversidade e Inclusão</div>
 									</div>
 									<div class="icon-box" onclick="showContent('content4')">
-										<img src="images/data-research.png" alt="Business Plan">
+										<img src="images/partnership.png" alt="Business Plan">
 										<div class="title">Parcerias e Advocacy</div>
 									</div>
 								</div>
@@ -260,6 +260,12 @@
 			document.getElementById('dynamic-title').innerText = content[contentId].title;
 			document.getElementById('dynamic-subtitle').innerText = content[contentId].subtitle;
 			document.getElementById('dynamic-content').innerHTML = content[contentId].text;
+		}
+
+		function resetContent() {
+			document.getElementById('dynamic-title').innerText = "Minhas prioridades";
+			document.getElementById('dynamic-subtitle').innerText = "Nour Elhouda Mahmoudi";
+			document.getElementById('dynamic-content').innerHTML = `<p>O Escotismo, assim como a música, é uma linguagem universal que ressoa em pessoas de todas as idades e origens. Tem o poder de inspirar, transformar e unir, criando uma mistura harmoniosa de valores e experiências que moldam a vida dos jovens em todo o mundo. Neste espírito, o meu compromisso de servir no Comitê Escoteiro Mundial é impulsionado por uma dedicação inabalável às seguintes prioridades:</p>`;
 		}
 	</script>
 
@@ -459,9 +465,7 @@
 									<li class="menu-item">
 										<a href="#billboard">Motivação</a>
 									</li>
-									<li class="menu-item">
-										<a href="#about">Sobre Mim</a>
-									</li>
+
 									<li class="menu-item">
 										<a href="#services">Minhas prioridades</a>
 									</li>
