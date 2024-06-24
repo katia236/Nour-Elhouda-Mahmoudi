@@ -1715,7 +1715,7 @@ li {
 
 /*----- Association Section --------------------------------------------------------------*/
 #footer {
-    background-color: #692c4a;
+    background-color: #ffffff;
     padding: 130px 0;
     margin-left: 0;
     margin-right: 0;
@@ -1726,7 +1726,7 @@ li {
 }
 
 #footer .container {
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 #footer ul.menu-list li {
