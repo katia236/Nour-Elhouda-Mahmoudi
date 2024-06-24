@@ -1075,7 +1075,7 @@ li {
 
 @media only screen and (max-width: 1040px) {
     #history figure {
-        width: 90%;
+        width: 100%;
         margin-right: 0;
     }
 
