@@ -938,18 +938,17 @@ li {
 }
 
 #billboard .main-banner {
+    display: flex;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1430px;
     margin: 0 auto;
     padding: 70px;
     box-sizing: border-box;
-
 }
 
 #billboard .banner-content {
     padding-top: 55px;
-
 }
 
 .banner-content h3.banner-title {
@@ -965,23 +964,50 @@ li {
 
 #billboard figure {
     width: 100%;
-    height: 50%;
+    height: auto;
+    /* Changed from 50% to auto for responsiveness */
     z-index: 2;
     padding: 100px;
     padding-bottom: 50px;
     padding-top: 50px;
-
 }
 
 #billboard figure img {
     width: 100%;
-    /* Adjust this value to change the width */
-    height: 50%;
-    /* Adjust this value to change the height, or set a fixed height */
+    height: auto;
+    /* Changed from 50% to auto for responsiveness */
     max-width: 100%;
     display: block;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    #billboard .main-banner {
+        padding: 20px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    #billboard .banner-content {
+        padding-top: 20px;
+    }
+
+    .banner-content h3.banner-title {
+        font-size: 1.8em;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .banner-content p {
+        margin-bottom: 30px;
+        /* Adjusted margin for smaller screens */
+    }
+
+    #billboard figure {
+        padding: 20px;
+        /* Adjusted padding for smaller screens */
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
 
 
 /*----- About Section
