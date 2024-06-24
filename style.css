@@ -1721,7 +1721,7 @@ li {
 }
 
 #footer .container {
-    max-width: 1200px;
+    max-width: 100%;
 }
 
 #footer ul.menu-list li {
@@ -1765,7 +1765,6 @@ li {
 
 @media only screen and (max-width: 1140px) {
     #footer .footer-item {
-        margin-left: 100px;
         /* For LTR (default) */
     }
 }
@@ -1778,7 +1777,6 @@ li {
 
     #footer .footer-item {
         width: 80%;
-        margin-left: 10px;
         /* For LTR (default) */
     }
 
