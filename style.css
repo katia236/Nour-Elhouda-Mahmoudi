@@ -1831,6 +1831,11 @@ li {
         flex-wrap: wrap;
         gap: 20px;
         /* Adjust as needed for spacing */
+
+    }
+
+    .grid {
+        flex-direction: column;
     }
 
     #footer-bottom p {
