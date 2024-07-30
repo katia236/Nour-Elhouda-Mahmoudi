@@ -1713,22 +1713,17 @@ li {
     opacity: 100%;
 }
 
-/*----- Association Section --------------------------------------------------------------*/
+/*----- Association Section 
+*/
 /* Styles de base */
 #footer {
     background-color: #2a7d35;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 10px;
-    /* ajustez selon vos besoins */
-    padding-right: 10px;
+    margin: 0;
+    padding: 20px 10px;
+    /* Ajustez selon vos besoins */
     box-sizing: border-box;
     width: 100%;
     /* Assurez-vous que le footer prend 100% de la largeur */
-}
-
-#footer .container {
-    max-width: 100%;
 }
 
 #footer ul.menu-list li {
@@ -1809,9 +1804,7 @@ li {
 /* Responsivité pour les écrans de moins de 500px */
 @media only screen and (max-width: 500px) {
     #footer {
-        padding: 20px 0;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 20px 10px;
     }
 
     #footer .footer-item,
@@ -1864,8 +1857,6 @@ li {
     padding-right: 10px;
     /* Add right padding for RTL */
 }
-
-
 
 
 
