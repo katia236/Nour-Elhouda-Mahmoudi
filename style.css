@@ -1714,6 +1714,7 @@ li {
 }
 
 /*----- Association Section --------------------------------------------------------------*/
+/* Styles de base */
 #footer {
     background-color: #ffffff;
     padding: 130px 0;
@@ -1768,13 +1769,20 @@ li {
     padding-left: 10px;
 }
 
+/* Responsivité pour les écrans de moins de 1140px */
 @media only screen and (max-width: 1140px) {
     #footer .footer-item {
         margin-left: 100px;
         /* For LTR (default) */
     }
+
+    [dir="rtl"] #footer .footer-item {
+        margin-right: 100px;
+        /* Adjust right margin for RTL */
+    }
 }
 
+/* Responsivité pour les écrans de moins de 800px */
 @media only screen and (max-width: 800px) {
     #footer .footer-menu {
         width: 50%;
@@ -1790,9 +1798,33 @@ li {
     #footer .footer-item h2 {
         font-size: 2.4em;
     }
+
+    [dir="rtl"] #footer .footer-item {
+        margin-right: 10px;
+        /* Adjust right margin for RTL */
+    }
 }
 
+/* Responsivité pour les écrans de moins de 500px */
 @media only screen and (max-width: 500px) {
+    #footer {
+        padding: 20px 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #footer .footer-item,
+    #footer .footer-menu {
+        width: 100%;
+        margin-left: 0;
+        /* For LTR (default) */
+        text-align: center;
+    }
+
+    #footer .footer-item h2 {
+        font-size: 1.8em;
+    }
+
     #footer-bottom .grid {
         justify-content: center;
     }
@@ -1800,8 +1832,14 @@ li {
     #footer-bottom p {
         text-align: center;
     }
+
+    [dir="rtl"] #footer .footer-item {
+        margin-right: 0;
+        /* Adjust right margin for RTL */
+    }
 }
 
+/* Styles pour RTL */
 [dir="rtl"] #footer .footer-item {
     margin-left: 0;
     /* Remove left margin for RTL */
@@ -1826,25 +1864,9 @@ li {
     /* Add right padding for RTL */
 }
 
-@media only screen and (max-width: 1140px) {
-    [dir="rtl"] #footer .footer-item {
-        margin-right: 100px;
-        /* Adjust right margin for RTL */
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    [dir="rtl"] #footer .footer-item {
-        margin-right: 10px;
-        /* Adjust right margin for RTL */
-    }
-}
 
 
-#footer,
-#footer-bottom {
-    width: 100%;
-}
+
 
 
 /* Specific styles for French, Spanish, Portuguese, and English */
