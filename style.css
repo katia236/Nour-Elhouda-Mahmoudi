@@ -1741,11 +1741,11 @@ li {
     padding-bottom: 5px;
 }
 
-/*#footer .footer-item {
+#footer .footer-item {
     width: 40%;
     margin-left: 300px;
     /* For LTR (default) */
-/*}*/
+}
 
 #footer .footer-item h2 {
     font-size: 3.4em;
@@ -1819,9 +1819,10 @@ li {
         font-size: 1.8em;
     }
 
+    /*
     #footer-bottom .grid {
         justify-content: center;
-    }
+    }*/
 
     #footer-bottom p {
         text-align: center;
