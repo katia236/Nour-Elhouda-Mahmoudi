@@ -1802,30 +1802,6 @@ li {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-menu,
-    .footer-item {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .footer-item h2 {
-        font-size: 1.8em;
-    }
-
-    .btn-wrap {
-        text-align: center;
-        width: 100%;
-    }
-}
-
 [dir="rtl"] #footer .footer-item {
     margin-left: 0;
     /* Remove left margin for RTL */
@@ -1893,6 +1869,7 @@ html:lang(ar) #footer .footer-menu {
     text-align: right;
     /* Specific to Arabic */
 }
+
 
 /* Example CSS for the "Read More" button */
 /* CSS for the "Read More" button */
