@@ -2168,6 +2168,7 @@ body.ar #scouting-journey {
     font-family: var(--font);
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 /* Timeline Container */
