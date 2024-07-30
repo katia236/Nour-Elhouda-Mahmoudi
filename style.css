@@ -1840,6 +1840,18 @@ li {
     }
 }
 
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#footer,
+#footer-bottom {
+    width: 100%;
+}
+
+
 /* Specific styles for French, Spanish, Portuguese, and English */
 html:lang(fr) #footer .footer-item,
 html:lang(es) #footer .footer-item,
