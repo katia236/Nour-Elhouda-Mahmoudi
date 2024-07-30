@@ -1717,13 +1717,14 @@ li {
 /* Styles de base */
 #footer {
     background-color: #2a7d35;
-    padding: 130px 0;
     margin-left: 0;
     margin-right: 0;
     padding-left: 10px;
     /* ajustez selon vos besoins */
     padding-right: 10px;
     box-sizing: border-box;
+    width: 100%;
+    /* Assurez-vous que le footer prend 100% de la largeur */
 }
 
 #footer .container {
